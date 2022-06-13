@@ -1,0 +1,13 @@
+#!/bin/sh
+
+post_install() {
+  cat << END
+╔════════════════════════════════════════════════════════════════════════════╗
+║ Scripts used by dwmblocks are available in "/bin" named "sb-*".            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+END
+}
+
+post_upgrade() {
+  post_install
+}
