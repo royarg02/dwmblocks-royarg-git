@@ -1,6 +1,6 @@
 pkgbase = dwmblocks-royarg-git
 	pkgdesc = A modified version of the modular status bar for dwm written in C.
-	pkgver = 1.0.8f56741
+	pkgver = 1.0.r75.8f56741c
 	pkgrel = 1
 	url = https://github.com/RoyARG02/dwmblocks
 	install = dwmblocks-royarg-git.install
