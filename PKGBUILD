@@ -1,7 +1,7 @@
 # Maintainer: Anurag Roy <anuragr9847@gmail.com>
 _pkgname="dwmblocks"
 pkgname="$_pkgname-royarg-git"
-pkgver=1.0.f46922a
+pkgver=1.0.8f56741
 pkgrel=1
 pkgdesc="A modified version of the modular status bar for dwm written in C."
 arch=('x86_64')
@@ -22,20 +22,8 @@ conflicts=("$_pkgname")
 install="$pkgname.install"
 source=(
   "git+$url.git"
-  https://raw.githubusercontent.com/RoyARG02/user_files/master/files/scripts/sb-battery
-  https://raw.githubusercontent.com/RoyARG02/user_files/master/files/scripts/sb-clock
-  https://raw.githubusercontent.com/RoyARG02/user_files/master/files/scripts/sb-memory
-  https://raw.githubusercontent.com/RoyARG02/user_files/master/files/scripts/sb-nettraf
-  https://raw.githubusercontent.com/RoyARG02/user_files/master/files/scripts/sb-pa-sink
-  https://raw.githubusercontent.com/RoyARG02/user_files/master/files/scripts/sb-pa-source
 )
-md5sums=('SKIP'
-         '93dd35a28c01d5c3321f5e840e8c83bb'
-         '649278834432ad707cb9ce4df0a6b159'
-         'ed858e38ec51a983f1b9a9e53a0b51c3'
-         '8aca79f031f40cbd4bcdabf6eacf0855'
-         '9e43871322c76383d66bfe0b60930e86'
-         '15d9d20528f6bdefc7ac83184079ec7e')
+md5sums=('SKIP')
 
 pkgver() {
   cd "$_pkgname"
@@ -52,5 +40,4 @@ package() {
   make PREFIX=/usr DESTDIR="$pkgdir" install
   install -Dm644 README.md "$pkgdir"/usr/share/doc/$pkgname/README.md
   install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
-  install -Dm755 "$startdir"/sb-* "$pkgdir"/usr/bin/
 }
