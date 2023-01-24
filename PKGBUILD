@@ -1,7 +1,7 @@
 # Maintainer: Anurag Roy <anuragr9847@gmail.com>
 _pkgname="dwmblocks"
 pkgname="$_pkgname-royarg-git"
-pkgver=1.0.r75.8f56741c
+pkgver=1.0.r76.131915c
 pkgrel=1
 pkgdesc="A modified version of the modular status bar for dwm written in C."
 arch=('x86_64')
@@ -11,6 +11,7 @@ depends=('sh' 'libx11')
 makedepends=('git')
 optdepends=('acpilight: for controlling display backlight'
   'btop: system resource monitor'
+  'figlet: expanded time display'
   'noto-fonts-emoji: for emoji support'
   'pulsemixer: for volume control'
   'ttf-joypixels: for emoji support'
@@ -28,7 +29,7 @@ md5sums=('SKIP')
 pkgver() {
   cd "$_pkgname"
   commits="$(git rev-list --count HEAD)"
-  gitref="$(git rev-parse --short=8 HEAD)"
+  gitref="$(git rev-parse --short=7 HEAD)"
   printf "1.0.r%s.%s" "$commits" "$gitref"
 }
 

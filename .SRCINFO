@@ -1,6 +1,6 @@
 pkgbase = dwmblocks-royarg-git
 	pkgdesc = A modified version of the modular status bar for dwm written in C.
-	pkgver = 1.0.r75.8f56741c
+	pkgver = 1.0.r76.131915c
 	pkgrel = 1
 	url = https://github.com/RoyARG02/dwmblocks
 	install = dwmblocks-royarg-git.install
@@ -11,6 +11,7 @@ pkgbase = dwmblocks-royarg-git
 	depends = libx11
 	optdepends = acpilight: for controlling display backlight
 	optdepends = btop: system resource monitor
+	optdepends = figlet: expanded time display
 	optdepends = noto-fonts-emoji: for emoji support
 	optdepends = pulsemixer: for volume control
 	optdepends = ttf-joypixels: for emoji support
