@@ -3,7 +3,7 @@
 post_install() {
   cat << END
 ╔════════════════════════════════════════════════════════════════════════════╗
-║ Scripts used by dwmblocks are available in "/bin" named "sb-*".            ║
+║ Scripts used by dwmblocks are available in "/usr/bin" named "sb-*".        ║
 ╚════════════════════════════════════════════════════════════════════════════╝
 END
 }
