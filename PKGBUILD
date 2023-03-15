@@ -1,7 +1,7 @@
 # Maintainer: Anurag Roy <anuragr9847@gmail.com>
 _pkgname="dwmblocks"
 pkgname="$_pkgname-royarg-git"
-pkgver=1.0.r83.4809701
+pkgver=1.0.r84.1a4abfb
 pkgrel=1
 pkgdesc="A modified version of the modular status bar for dwm written in C."
 arch=('x86_64')
@@ -15,6 +15,7 @@ optdepends=('acpilight: for controlling display backlight'
   'ncpamixer: audio mixer'
   'noto-fonts-emoji: for emoji support'
   'pulsemixer: audio mixer'
+  'playerctl: Control media players'
   'ttf-joypixels: for emoji support'
   'xorg-xbacklight: for controlling display backlight'
   'xorg-xset: for controlling display sleep'
