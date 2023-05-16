@@ -9,8 +9,7 @@ url="https://github.com/RoyARG02/$_pkgname"
 license=('ISC')
 depends=('sh' 'libx11')
 makedepends=('git')
-optdepends=('acpilight: for controlling display backlight'
-  'btop: system resource monitor'
+optdepends=('btop: system resource monitor'
   'figlet: expanded time display'
   'ncpamixer: audio mixer'
   'noto-fonts-emoji: for emoji support'

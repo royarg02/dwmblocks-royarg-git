@@ -9,7 +9,6 @@ pkgbase = dwmblocks-royarg-git
 	makedepends = git
 	depends = sh
 	depends = libx11
-	optdepends = acpilight: for controlling display backlight
 	optdepends = btop: system resource monitor
 	optdepends = figlet: expanded time display
 	optdepends = ncpamixer: audio mixer
